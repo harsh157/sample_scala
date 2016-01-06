@@ -8,7 +8,10 @@ scala:
     - 2.9
     - 2.9.1
 
-script: true
+script:
+  - scala 
+  - util.Properties.versionString
+  - exit
 
   #- export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
   #- sbt clean scoverage:test
